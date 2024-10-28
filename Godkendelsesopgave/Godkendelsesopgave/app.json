@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Godkendelsesopgave",
+    "slug": "Godkendelsesopgave",
+    "version": "1.0.0",
+    "scheme": "godkendelsesopgave", 
+    "platforms": ["ios", "android"],
+    "android": {
+      "package": "com.yourcompany.godkendelsesopgave", 
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "https",
+              "host": "yourapp.com", 
+              "pathPrefix": "/"
+            },
+            {
+              "scheme": "godkendelsesopgave"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.yourcompany.godkendelsesopgave", 
+      "associatedDomains": ["applinks:yourapp.com"] 
+    }
+  }
+}
